@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import"integrantes";
+@import"exitos";
+@import"usuario";
+@import"contactanos";
+@import"media";
+@import"404";
+/*index.html*/
+body{
+    background: url(https://images2.alphacoders.com/542/thumb-1920-542370.jpg);
+    background-size: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    @include bp(papa-bear){
+        height: 100vh;
+        background-size: 125%;
+    }
+    @include bp(mama-bear){
+        background-size: 215%;
+        background-repeat: no-repeat;
+    }
+    @include bp(baby-bear){
+        background-repeat: no-repeat;
+        background-size: 368%;
+        height: 538px;;
+
+    }
+}
+/*menu*/
+.navbar-light .navbar-brand{
+        
+        background-color: transparent;
+        @include bp(papa-bear){
+            width: 30%;
+            background-color:transparent;
+            @include bp(mama-bear){
+                background-color:transparent;
+                @include bp(baby-bear){
+                    
+                    background-color: transparent;
+                }
+            }
+        }
+        }  
+        .bg-light{
+            z-index: 10000;
+            top: 0;
+            position: absolute;
+            width: 100%;
+            
+        }
+            .bg-light img{
+                background-color: transparent;
+                width: 20%;
+                height: 20%;
+                @include bp(papa-bear){
+                    width: 20%;
+                    height: 20%;
+                    
+                }
+}
+/*cuerpo del contenido*/
+.carousel-item.active {
+    display: block;
+    height: 100% ;
+    @include bp(oldpapa-bear){
+        height: 137% ;
+    }
+    @include bp(mama-bear){
+        height: 120% ;
+    }
+    @include bp(baby-bear){
+        height: 100% ;
+    }
+}
+#carouselExampleCaptions{
+    height: 90.08%;
+    padding-left: 17%;
+    padding-right: 17%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-top: 0px;
+    @include bp(papa-bear){
+        height: 90.08%;
+        @include bp(baby-bear){
+            height: 90.08%;
+    }
+    }
+
+        .carousel-inner{
+            height: 97%;
+            padding-top: 15%;
+            width: 100%;
+            @include bp(papa-bear){
+                padding-top: 15%;
+                height: 97%;
+        }
+        @include bp(mama-bear){
+            padding-top: 17%;
+            height: 97%;
+    }
+             @include bp(baby-bear){
+                padding-top: 40%;
+                height: 100%;    
+        }
+        .carousel-caption{
+            @include bp(oldpapa-bear){
+                right: 4%;
+                bottom: 35%;
+                left: 4%;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                color: white; 
+            }
+            @include bp(papa-bear){
+                right: 4%;
+                bottom: 30%;
+                left: 4%;
+                padding-top: 0px;
+                padding-bottom: 0px;       
+            }
+            @include bp(mama-bear){
+                display: block !important;
+                height: 30%;
+                right: 4%;
+                bottom: 12%;
+                left: 4%;
+                padding-top: 0px;
+                padding-bottom: 0px;       
+            }
+            @include bp(baby-bear){
+                bottom: 3%;
+                font-size: 9px;   
+                display: block !important;
+            }
+            .carousel-indicators{
+                bottom: 22px;  
+                @include bp(papa-bear){
+                    bottom: 22px;       
+                }
+                @include bp(mama-bear){
+                    bottom: 22px;       
+                }
+                @include bp(baby-bear){
+                    bottom: 22px;       
+                }
+            }
+            h5{
+                @include bp(baby-bear){
+                    font-size: 15px;
+       
+                }
+
+            }
+    }
+}
+p{
+    font-size: 90%;
+    @include bp(mama-bear){
+        font-size: 70%;      
+    }
+    @include bp(baby-bear){
+        font-size: 90%; 
+    }
+}
+    img{
+        height: 505px;
+        @include bp(baby-bear){
+            height: 342px;
+        }
+    }
+}
+/*footer*/
+#footer{
+    z-index: 10000;
+    display: flex;
+    background-color: #242227;
+    flex-direction: column;
+    height: 10%;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    align-items: center;
+    @include bp(baby-bear){    
+        bottom: 0px;
+    }
+    h6{
+        height: 10%;
+        width: 100%;
+        color: rgb(0, 255, 242);
+        justify-content: center;
+        margin: 0%;
+        font-size: 15px;
+        @include bp(papa-bear){    
+            font-size: 15px;
+        }
+        
+    }
+    img{
+        width: 30px;
+        height: 30px;
+        @include bp(papa-bear){    
+        width: 30px;
+        height: 30px;
+        }
+    }
+
+}
